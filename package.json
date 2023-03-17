@@ -1,0 +1,24 @@
+{
+  "name": "gatsby-plugin-ecoindex-v2",
+  "version": "1.0.0",
+  "description": "A badge displaying the ecoindex of the page (from ecoindex.fr)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2.git"
+  },
+  "keywords": [
+    "gatsby",
+    "plugin",
+    "ecoindex"
+  ],
+  "author": "#NovaGaïa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2/issues"
+  },
+  "homepage": "https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2#readme"
+}
