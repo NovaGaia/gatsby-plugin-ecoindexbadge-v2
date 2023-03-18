@@ -9,7 +9,7 @@ This project aims at proposing a badge to be easily integrated to your web pages
 ```sh
 npm i gatsby-plugin-ecoindexbadge-v2
 or
-yarn install gatsby-plugin-ecoindexbadge-v2
+yarn add gatsby-plugin-ecoindexbadge-v2
 ```
 
 # Configuration
