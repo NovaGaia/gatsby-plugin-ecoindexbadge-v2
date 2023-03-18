@@ -107,3 +107,4 @@ dist
 /*.js
 !index.js
 package-lock.json
+.npmrc
