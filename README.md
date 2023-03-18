@@ -1,15 +1,15 @@
 # A Gatsby plugin to integrate [Ecoindex Badge](https://github.com/cnumr/ecoindex_badge) to your pages
 
-> Real name: `gatsby-plugin-ecoindexbadge-v2`
+> Real name: `gatsby-plugin-ecoindex-v2`
 
 This project aims at proposing a badge to be easily integrated to your web pages. This badge will display the Ecoindex score of the web page on which it is integrated and will redirect the user to the Ecoindex score details page.
 
 # Installation
 
 ```sh
-npm i gatsby-plugin-ecoindexbadge-v2
+npm i gatsby-plugin-ecoindex-v2
 or
-yarn add gatsby-plugin-ecoindexbadge-v2
+yarn add gatsby-plugin-ecoindex-v2
 ```
 
 # Configuration
@@ -22,7 +22,7 @@ Add to gatby-config:
 plugins: [
   // ...
   {
-    resolve: `gatsby-plugin-ecoindexbadge-v2`,
+    resolve: `gatsby-plugin-ecoindex-v2`,
     options: {
       theme: `light`,
       fixedPosition: true,
