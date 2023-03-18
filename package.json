@@ -4,21 +4,42 @@
   "description": "A badge displaying the ecoindex of the page (from ecoindex.fr)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\"",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2.git"
   },
   "keywords": [
+    "ecoindex",
+    "greenit",
     "gatsby",
-    "plugin",
-    "ecoindex"
+    "gatsby-plugin"
   ],
-  "author": "#NovaGaïa",
+  "author": "Association GreenIT | NovaGaïa",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2/issues"
   },
-  "homepage": "https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2#readme"
+  "homepage": "https://github.com/NovaGaia/gatsby-plugin-ecoindexbadge-v2#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "babel-preset-gatsby-package": "^2.25.0",
+    "cross-env": "^7.0.3",
+    "release-it": "^15.9.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.0.0-next || ^5.0.0-next",
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  }
 }
