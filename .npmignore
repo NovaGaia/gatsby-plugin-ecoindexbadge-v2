@@ -3,3 +3,9 @@
 !gatsby-ssr.js
 !index.js
 .npmrc
+.auto-changelog
+.babelrc
+.prettierignore
+.prettierrc.json
+.release-it.json
+package-lock.json
