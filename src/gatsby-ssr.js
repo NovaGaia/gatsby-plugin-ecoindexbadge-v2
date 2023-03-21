@@ -18,11 +18,10 @@ function buildInformationMessage() {
   )
 }
 
-export const onRenderBody = ({
-  setBodyAttributes,
-  setPostBodyComponents,
-  setHeadComponents,
-}) => {
+export const onRenderBody = (
+  { setBodyAttributes, setPostBodyComponents, setHeadComponents },
+  pluginOptions
+) => {
   const preconnectEcoIndex =
     ((
       <link
@@ -38,7 +37,9 @@ export const onRenderBody = ({
         href="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@2/assets/js/ecoindex-badge.js"
       />
     ))
-  setHeadComponents([preconnectEcoIndex])
+  setHeadComponents(
+    !!!pluginOptions.useSimpleImage ? [preconnectEcoIndex] : null
+  )
   setBodyAttributes({ style: { position: 'relative' } })
   setPostBodyComponents([buildInformationMessage()])
 }
