@@ -26,6 +26,8 @@ plugins: [
     options: {
       theme: `light`,
       fixedPosition: true,
+      siteURL: `https://www.yourdomain.tld`,
+      useSimpleImage: true,
     },
   },
   // ...
@@ -35,7 +37,9 @@ plugins: [
 ## 2. Options
 
 - `theme`: `light` or `dark`, default `light` ;
-- `fixedPosition`: `true` or `false`, default `false`.
+- `fixedPosition`: `true` or `false`, default `false` ;
+- `siteURL`: your domain to fetch the mesure (`required` with `useSimpleImage`) ;
+- `useSimpleImage`: fetch only the SVG image and without the script library.
 
 The fixed position is a simple `<style/>` added to head with `position: fixed` and `bottom: 10px`.
 
