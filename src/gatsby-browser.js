@@ -8,12 +8,13 @@ import { graphql } from 'gatsby'
 exports.onRouteUpdate = ({ location }, pluginOptions) => {
   function removeOldData() {
     const list = [`ecoindex-style`, `ecoindex-badge`]
-    list.forEach(element => {
-      const oldElement = document.getElementById(element)
-      if (oldElement) {
-        oldElement.parentNode.removeChild(oldElement)
-      }
-    })
+    !!!pluginOptions.useSimpleImage ? list.push(`ecoindex-script`) : null,
+      list.forEach(element => {
+        const oldElement = document.getElementById(element)
+        if (oldElement) {
+          oldElement.parentNode.removeChild(oldElement)
+        }
+      })
   }
   removeOldData()
   function load_style() {
