@@ -9,3 +9,4 @@
 .prettierrc.json
 .release-it.json
 package-lock.json
+thunder-tests

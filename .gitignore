@@ -108,3 +108,4 @@ dist
 !index.js
 package-lock.json
 .npmrc
+thunder-tests
